@@ -1,0 +1,47 @@
+.about {
+    background-image: url('../img/About_Backgroud.png');
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+    &__play-btn {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        margin: 50px 0;
+        transition: 1s;
+
+
+        .about__polygon {
+            color: $polygon-blue;
+            font-size: 60px;
+            padding-left: 15px;
+            transition: 0.3s;
+        }   
+    }
+
+    &__play-btn:hover {
+        scale: 1.1;
+        background-color: $polygon-blue;
+    }
+    
+    &__play-btn:hover &__polygon {
+        color: #fff;
+    }
+
+    &__description {
+        font-size: 24px;
+        width: 390px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}

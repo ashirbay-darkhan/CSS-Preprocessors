@@ -1,0 +1,50 @@
+
+footer {
+    background-color: $gray;
+    padding: 20px 145px;
+    
+    /* footer contains - 3 columns */
+    
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 40% 1fr;
+        grid-template-rows: minmax(80px, auto);
+        padding: 20px 0 50px 0;
+        
+        &__project {
+            display: inline-flex;
+            align-items: start;
+            justify-content: center;
+            padding-bottom: 12px;
+        
+            
+            &--logo {
+                width: 20px;
+            }
+    
+            &--text {
+                font-size: 18px;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                margin-left: 16px;
+            }
+        }
+    
+        &__address {
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            p {
+                color: rgba(255, 255, 255, 0.4);
+            }
+        }
+    
+        &__copyright {
+            color: rgba(255, 255, 255, 0.4);
+            align-self: flex-end;
+        }
+    }
+}

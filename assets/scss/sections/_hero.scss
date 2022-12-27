@@ -1,0 +1,21 @@
+.hero {
+    &__logo {
+        width: 63px;
+        transition: 1s;
+    }
+    
+    &__logo:hover {
+        scale: 1.3;
+        transform: rotateY(180deg);
+    }
+
+    h1 {
+        line-height: 64px;
+        padding-bottom: 30px;  
+    }
+
+    &__description{
+        font-size: 24px;    
+        color: $description-gray;
+    }
+}

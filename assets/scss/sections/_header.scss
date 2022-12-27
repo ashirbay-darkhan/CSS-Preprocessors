@@ -1,0 +1,68 @@
+.mask {
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+    top: 3%;
+    right: 13%;
+    animation-duration: 1.5s;
+    animation-name: translate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.group {
+    pointer-events: none;
+    position: absolute;
+    top: 9%;
+    left: 60%;
+    animation-duration: 2s;
+    animation-name: opacity;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.header {
+    z-index: 1;
+    background-image: url('../img/Desktop_Backgrounds_1920x1200_6\ 3.png');
+    height: 100vh;
+    background-position: center top;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px;
+
+    .menu__title {
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 16px;
+    }
+
+    .nav__menu {
+        .nav__list {
+            display: flex;
+            list-style: none;
+
+            .nav__item {
+                padding: 0 15px;
+                text-decoration: none;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+            }
+            
+            .nav__item:hover {
+                border-bottom: 2px solid #FFFFFF;
+            }
+        }
+        .nav__toggle {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+    }
+}
+
